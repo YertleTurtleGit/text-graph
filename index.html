@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>📄 Text Graph</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="input-wrapper">
+      <div id="text-input-wrapper">
+        <form id="text-input-form">
+          <input id="text-input" type="text" />
+          <input id="text-input-submit" type="submit" value="🚀" />
+        </form>
+      </div>
+      <div id="file-input-wrapper">
+        <input
+          id="file-input"
+          type="file"
+          multiple
+          accept=".pdf,application/pdf"
+        />
+        <label for="file-input">📂</label>
+      </div>
+    </div>
+    <progress id="main-progress" max="1" value="null"></progress>
+    <div id="graph"></div>
+
+    <script src="//cdn.jsdelivr.net/npm/3d-force-graph"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
